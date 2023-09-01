@@ -1,0 +1,212 @@
+/* Définition de la police de caractère personnalisée */
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../Font/SegoeUI.ttf');
+    font-weight: 200;
+}
+
+/* Règles appliquées à tous les éléments */
+* {
+    font-family: "SegoeUI";
+    background-color: #0078D7;
+}
+
+/* Règles appliquées au corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Règles appliquées au formulaire */
+.form {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 5%;
+    width: 25%;
+    padding-right: 10px;
+    margin-top: 10%;
+}
+
+/* Règles appliquées aux titres h1 */
+h1 {
+    text-align: left;
+    font-family: "SegoeUI";
+    color: white;
+    font-size: 1000%;
+    margin-left: 10%;
+    margin-right: 40%;
+    margin-bottom: 50px;
+}
+
+/* Règles appliquées aux paragraphes p */
+p {
+    text-align: left;
+    color: white;
+    font-size: 180%;
+    margin-left: 10%;
+    margin-right: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Règles spécifiques pour la classe .pss */
+.pss {
+    font-size: 140%;
+}
+
+/* Règles spécifiques pour la classe .qr */
+.qr {
+    text-align: left;
+    color: white;
+    font-size: 140%;
+    margin-left: 10px;
+    margin-right: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Règles spécifiques pour l'image de classe .qrimg */
+.qrimg {
+    float: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Règles appliquées aux étiquettes de formulaire */
+label {
+    font-size: 150%;
+    padding: 10px;
+    color: white;
+    font-family: "SegoeUI";
+}
+
+/* Règles appliquées aux champs de saisie */
+input {
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 97%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    color: white;
+}
+
+/* Règles appliquées aux boutons */
+button {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #0078D7;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: "SegoeUI";
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* Règles appliquées au survol des boutons */
+button:hover {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: white;
+    color: #0078D7;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: "SegoeUI";
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* Règles appliquées à la liste de suggestions */
+#suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+    position: absolute;
+    top: 35.5%;
+    left: 30%;
+    width: 40%;
+}
+
+/* Règles appliquées aux éléments de la liste de suggestions */
+#suggestions-list li {
+    background-color: #F1F1F1;
+    border: 1px solid #D4D4D4;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+/* Règles appliquées au survol des éléments de la liste de suggestions */
+#suggestions-list li:hover {
+    background-color: #868282;
+}
+
+/* Règles appliquées aux liens non visités */
+a:link {
+    color: white;
+}
+
+/* Règles appliquées aux liens visités */
+a:visited {
+    color: white;
+}
+
+/* Règles appliquées aux menus déroulants */
+select {
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-family: LemonRegular;
+    color: white;
+}
+
+/* Règles appliquées aux options des menus déroulants */
+option {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-family: LemonRegular;
+    color: white;
+}
+
+/* Règles spécifiques pour la classe .err */
+.err {
+    border: 5px solid white;
+    padding: 20px;
+    margin: 2%;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Règles appliquées aux titres h1 dans la classe .err */
+.err h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 10px;
+    margin: 1%;
+}
+
+/* Règles appliquées aux paragraphes p dans la classe .err */
+.err p {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 1%;
+}

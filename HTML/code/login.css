@@ -1,0 +1,106 @@
+/* Définition des polices de caractères */
+@font-face {
+  font-family: 'LemonRegular'; /* Nom de la police : LemonRegular */
+  src: url('../Font/LemonRegular.otf'); /* Chemin vers le fichier de police */
+}
+
+@font-face {
+  font-family: 'LemonBold'; /* Nom de la police : LemonBold */
+  src: url('../Font/LemonBold.otf'); /* Chemin vers le fichier de police */
+}
+
+/* Styles appliqués à tous les éléments de la page */
+* {
+  font-family: LemonRegular; /* Utilise la police LemonRegular pour tous les éléments */
+}
+
+/* Styles appliqués au corps du document */
+body {
+  background-image: url('background.png'); /* Image de fond */
+  background-size: cover; /* Redimensionne l'image de fond pour couvrir tout l'élément */
+  background-position: center; /* Centre l'image de fond */
+  backdrop-filter: blur(15px); /* Applique un flou à l'arrière-plan */
+  margin: 0; /* Supprime les marges extérieures */
+  padding: 0; /* Supprime les marges intérieures */
+  display: flex; /* Utilise un modèle d'affichage en ligne */
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  height: 100vh; /* Hauteur de l'élément égale à la hauteur de la fenêtre */
+}
+
+/* Styles appliqués aux titres de niveau 1 */
+h1 {
+  text-align: center; /* Centre le texte */
+  font-family: LemonBold; /* Utilise la police LemonBold */
+}
+
+/* Styles appliqués à la classe .container */
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond avec transparence */
+  border-radius: 5px; /* Rayon de courbure des coins */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  padding: 20px; /* Espacement intérieur */
+  width: 20%; /* Largeur de l'élément */
+}
+
+/* Styles appliqués à la classe .form */
+.form {
+  display: flex; /* Utilise un modèle d'affichage en ligne */
+  flex-direction: column; /* Organise les éléments enfants en colonne */
+}
+
+/* Styles appliqués aux titres de niveau 1 dans la classe .form */
+.form h1 {
+  text-align: center; /* Centre le texte */
+}
+
+/* Styles appliqués aux champs de saisie de texte */
+input[type="text"] {
+  padding: 10px; /* Espacement intérieur */
+  margin-bottom: 10px; /* Marge inférieure */
+  border: 1px solid #ccc; /* Bordure de 1 pixel de couleur grise */
+  border-radius: 4px; /* Rayon de courbure des coins */
+  display: flex; /* Utilise un modèle d'affichage en ligne */
+  width: 100%; /* Largeur de l'élément */
+}
+
+/* Styles appliqués aux boutons */
+button {
+  padding: 10px; /* Espacement intérieur */
+  background-color: #0078D7; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  border: 2px solid #0078D7; /* Bordure de 2 pixels de couleur */
+  border-radius: 4px; /* Rayon de courbure des coins */
+  cursor: pointer; /* Curseur de souris en forme de main */
+  font-size: 1.1em; /* Taille de la police */
+  font-family: LemonBold; /* Utilise la police LemonBold */
+  transition: 0.3s; /* Durée de la transition */
+  width: 100%; /* Largeur de l'élément */
+}
+
+/* Styles appliqués au survol des boutons */
+button:hover {
+  padding: 10px; /* Espacement intérieur */
+  background-color: white; /* Couleur de fond */
+  color: #0078D7; /* Couleur du texte */
+  border: 2px solid #0078D7; /* Bordure de 2 pixels de couleur */
+  border-radius: 4px; /* Rayon de courbure des coins */
+  cursor: pointer; /* Curseur de souris en forme de main */
+  font-size: 1.1em; /* Taille de la police */
+  font-family: LemonBold; /* Utilise la police LemonBold */
+  transition: 0.3s; /* Durée de la transition */
+  width: 100%; /* Largeur de l'élément */
+}
+
+/* Styles appliqués à la classe .input-container */
+.input-container {
+  display: flex; /* Utilise un modèle d'affichage en ligne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  vertical-align: middle; /* Centre verticalement l'élément par rapport à son parent */
+}
+
+/* Styles appliqués aux images dans la classe .input-container */
+.input-container img {
+  margin-right: 10px; /* Marge à droite de l'image */
+}

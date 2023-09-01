@@ -1,0 +1,87 @@
+/* Définition des polices de caractères */
+
+@font-face {
+  font-family: 'LemonRegular'; /* Définition du nom de la police */
+  src: url('../Font/LemonRegular.otf'); /* Chemin d'accès à la police de caractères */
+}
+
+@font-face {
+  font-family: 'LemonBold'; /* Définition du nom de la police */
+  src: url('../Font/LemonBold.otf'); /* Chemin d'accès à la police de caractères */
+}
+
+/* Réglages globaux */
+
+* {
+  font-family: LemonRegular; /* Utilisation de la police LemonRegular pour tous les éléments */
+}
+
+body {
+  background-image: url('background.png'); /* Définition de l'image de fond */
+  background-size: cover; /* Redimensionnement de l'image de fond pour couvrir tout l'élément */
+  background-position: center; /* Positionnement de l'image de fond au centre */
+  backdrop-filter: blur(15px); /* Application d'un flou à l'arrière-plan */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utilisation d'un modèle de boîte flexible */
+  justify-content: center; /* Alignement horizontal des éléments fils au centre */
+  align-items: center; /* Alignement vertical des éléments fils au centre */
+  height: 100vh; /* Hauteur de l'élément égal à la hauteur de la fenêtre du navigateur */
+}
+
+/* Styles pour les titres h1 */
+
+h1 {
+  text-align: center; /* Alignement du texte au centre */
+  font-family: LemonBold; /* Utilisation de la police LemonBold pour les titres h1 */
+  margin: 10px; /* Marge autour du titre */
+}
+
+/* Styles pour le conteneur */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond semi-transparente */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  padding: 20px; /* Espacement intérieur */
+  width: 20%; /* Largeur du conteneur */
+}
+
+/* Styles pour le formulaire */
+
+.form {
+  display: flex; /* Utilisation d'un modèle de boîte flexible */
+  flex-direction: column; /* Affichage vertical des éléments fils */
+}
+
+/* Styles pour les boutons */
+
+button {
+  padding: 10px; /* Espacement intérieur */
+  background-color: #0078D7; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  border: 2px solid #0078D7; /* Bordure de 2 pixels */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  font-size: 1.1em; /* Taille de la police */
+  font-family: LemonBold; /* Utilisation de la police LemonBold pour les boutons */
+  transition: 0.3s; /* Durée de transition pour les animations */
+  width: 100%; /* Largeur du bouton */
+  margin: 1%; /* Marge autour du bouton */
+}
+
+/* Pareil que au dessus mais avec des couleurs differentes au survol */
+
+button:hover {
+  padding: 10px;
+  background-color: white;
+  color: #0078D7;
+  border: 2px solid #0078D7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-family: LemonBold;
+  transition: 0.3s;
+  width: 100%;
+  margin: 1%;
+}

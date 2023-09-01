@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code</title>
+  <link rel="stylesheet" type="text/css" href="login.css"> <!-- Lien vers la feuille de style login.css -->
+</head>
+
+<body>
+  <div class="container"> <!-- Conteneur principal -->
+    <form id="loginForm" class="form">
+      <h1>Code</h1>
+      <div class="input-container"> <!-- Conteneur pour un champ de saisie et une icône -->
+        <img src="user.png" width="10%" height="10%"> <!-- Icône utilisateur -->
+        <input type="text" placeholder="Nom d'utilisateur" id="loginUsername" autocomplete="off" required> <!-- Champ de saisie pour le nom d'utilisateur" -->
+      </div>
+
+      <div class="input-container"> <!-- Conteneur pour un champ de saisie et une icône -->
+        <img src="lock.png" width="10%" height="10%"> <!-- Icône cadenas -->
+        <input type="text" placeholder="Code" id="loginPassword" autocomplete="off" required> <!-- Champ de saisie pour le code -->
+      </div>
+      <button type="submit">Afficher</button> <!-- Bouton d'envoye des données -->
+  </div>
+
+  <script src="login.js"></script> <!-- Inclusion du script JavaScript login.js -->
+</body>
+
+</html>

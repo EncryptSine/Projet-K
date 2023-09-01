@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une adresse</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Importe le fichier CSS style.css -->
+    <script defer src="script.js"></script> <!-- Importe le fichier JavaScript script.js -->
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="form">
+            <h1>Ajouter votre adresse</h1> <!-- Texte en au haut du .container -->
+            <label for="address-input">Entrez une adresse:</label> <!-- Étiquette pour le champ de saisie de l'adresse -->
+            <input autocomplete="off" type="text" id="address-input" class="change" placeholder="123 Rue de Paris" required /> <!-- Champ de saisie de l'adresse avec ID, classe, change = detction si le texte change et attribut requis -->
+            <label for="city-input">Ville:</label> 
+            <input autocomplete="off" type="text" id="city-input" class="change" placeholder="Nantes" required /> <!-- Champ de saisie de la ville avec ID, classe, change = detction si le texte change et attribut requis -->
+            <label for="country-input">Pays:</label>
+            <input autocomplete="off" type="text" id="country-input" class="change" placeholder="France!" required /> <!-- Champ de saisie du pays avec ID, classe, change = detction si le texte change et attribut requis -->
+            <label for="postal-input">Code postal</label> 
+            <input autocomplete="off" type="text" id="postal-input" class="change" placeholder="44000" required /> <!-- Champ de saisie du code postal avec ID, classe, change = detction si le texte change et attribut requis -->
+            <label for="icon-input">Choississez votre icone</label> 
+            <select id="options" name="options"> <!-- Liste déroulante avec ID et nom -->
+                <option value="bar" selected>Bar</option> <!-- Option pour sélectionner "Bar" par défaut -->
+                <option value="bus">Bus</option> <!-- Option pour sélectionner "Bus" -->
+                <option value="garage">Garage</option>
+                <option value="magasin">Magasin</option>
+                <option value="poste">Poste</option>
+                <option value="restaurant">Restaurant</option>
+            </select>
+            <button type="submit" id="submit-btn">Ajouter l'adresse</button> <!-- Bouton de soumission du formulaire -->
+        </form>
+    </div>
+</body>
+</html>

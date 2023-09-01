@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ho non!</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lien vers le fichier de style CSS -->
+    <script defer src="script.js"></script> <!-- Lien vers le fichier de script JavaScript -->
+</head>
+
+<body class="qrcode">
+    <form id="loginForm" class="form"> <!-- Formulaire pour entrer une adresse -->
+        <label for="address-input">Entrez une adresse:</label>
+        <input autocomplete="off" type="text" id="address-input" class="change" placeholder="123 Rue de Paris" required /> <!-- Champ de saisie pour l'adresse -->
+
+        <label for="city-input">Ville:</label>
+        <input autocomplete="off" type="text" id="city-input" class="change" placeholder="Nantes" required />
+        <!-- Champ de saisie pour la ville -->
+
+        <label for="country-input">Pays:</label>
+        <input autocomplete="off" type="text" id="country-input" class="change" placeholder="France!" required />
+        <!-- Champ de saisie pour le pays -->
+
+        <label for="postal-input">Code postal</label>
+        <input autocomplete="off" type="text" id="postal-input" class="change" placeholder="44000" required />
+        <!-- Champ de saisie pour le code postal -->
+
+        <label for="lat-input">Latitude</label>
+        <input autocomplete="off" type="text" id="lat-input" class="change" placeholder="47.19553621821676" required />
+        <!-- Champ de saisie pour la latitude -->
+
+        <label for="lon-input">Longitude</label>
+        <input autocomplete="off" type="text" id="lon-input" class="change" placeholder="-1.515061855316162" required />
+        <!-- Champ de saisie pour la longitude -->
+
+        <select id="options" name="options"> <!-- Sélection d'icones -->
+            <option value="bar" selected>Bar</option>
+            <option value="bus">Bus</option>
+            <option value="garage">Garage</option>
+            <option value="magasin">Magasin</option>
+            <option value="poste">Poste</option>
+            <option value="restaurant">Restaurant</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Ajouter l'adresse</button> <!-- Bouton pour soumettre le formulaire -->
+    </form>
+
+
+    <!-- Page d'erreur dans le style d'un "Blue screen" de windows 10,
+    ce choix car la majorité des utilisateurs sont sur windows et reconnaisse cette ecran-->
+
+    <h1>:(</h1>
+
+    <p>Oula il semblerait que votre adresse n'existe pas dans notre base de données.
+        Nous possédons plus de 70% des adresses en France mais il est possible que la vôtre n'y figure pas.
+        Ajouter votre adresse à notre site est toujours possible ! Mais cela requiert un POIL plus d'efforts.
+        Remplissez le formulaire comme avant mais en rajoutant votre latitude et longitude !</p>
+
+    <p class="pss">Psss, vous ne la connaissez pas . Ne vous en faite pas ! Vous pouvez utiliser
+        <a target="_blank" href="https://www.coordonnees-gps.fr/">ce site</a> pour la trouver.
+    </p>
+
+    <br>
+
+    <p class="pour">0% complete</p>
+
+    <br>
+
+    <p class="qrimg">
+        <img src="image.png"> <!-- Image QR code -->
+    </p>
+
+    <p class="qr">
+        Veuillez completer de nouveau le formulaire <br>
+        <a href="../adresse/index.html">Retour a la page principale ?</a>
+        <!-- Lien pour revenir à la page principale -->
+    </p>
+
+    <br>
+    <br>
+
+    <p class="qr">Code d'erreur : Location in database not found</p> <!-- Message d'erreur -->
+</body>
+
+</html>
